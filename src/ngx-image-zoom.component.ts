@@ -373,8 +373,8 @@ export class NgxImageZoomComponent implements OnInit, OnChanges, AfterViewInit {
     }
 
     private calculateRatioAndOffset() {
-        this.thumbWidth = this.imageThumbnail.nativeElement.width;
-        this.thumbHeight = this.imageThumbnail.nativeElement.height;
+        this.thumbWidth = this.imageThumbnail.nativeElement.naturalWidth;
+        this.thumbHeight = this.imageThumbnail.nativeElement.naturalHeight;
 
         // If lens is disabled, set lens size to equal thumb size and position it on top of the thumb
         if (!this.enableLens) {
