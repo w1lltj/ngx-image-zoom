@@ -193,6 +193,7 @@ export class NgxImageZoomComponent implements OnInit, OnChanges, AfterViewInit {
     }
 
     onFullImageLoaded() {
+        this.display = 'none';
         this.fullImageLoaded = true;
         this.checkImagesLoaded();
     }
